@@ -1,0 +1,45 @@
+--INSERT ORDERS
+INSERT INTO ORDERS
+VALUES(1001, 'test1', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1002, 'test2', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1003, 'test3', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1004, 'test4', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1005, 'test5', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1006, 'test6', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1007, 'test7', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1008, 'test8', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1009, 'test9', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+INSERT INTO ORDERS
+VALUES(1010, 'test10', 140, TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+-- INSERT PRODUCT
+INSERT INTO PRODUCT VALUES(1, 'ttt', 'test1', 10);
+INSERT INTO PRODUCT VALUES(2, 'ttt', 'test2', 20);
+INSERT INTO PRODUCT VALUES(3, 'ttt', 'test3', 30);
+INSERT INTO PRODUCT VALUES(1005, 'ttt', 'test4', 40);
+INSERT INTO PRODUCT VALUES(5, 'ttt', 'test5', 50);
+INSERT INTO PRODUCT VALUES(6, 'ttt', 'test6', 60);
+INSERT INTO PRODUCT VALUES(7, 'ttt', 'test7', 70);
+INSERT INTO PRODUCT VALUES(8, 'ttt', 'test8', 80);
+INSERT INTO PRODUCT VALUES(9, 'ttt', 'test9', 90);
+INSERT INTO PRODUCT VALUES(10, 'ttt', 'test10', 100);
+
+--SELECT PRODUCT
+SELECT * FROM PRODUCT  WHERE COST_PRICE = 50 AND NAME = 'test5';
+SELECT * FROM PRODUCT WHERE ID = 1005 AND COST_PRICE < 50;
+SELECT * FROM PRODUCT WHERE ID > 1005 AND MANUFACTURER_NAME = 'someManefacturer';
+SELECT * FROM PRODUCT;
+
+--UPDATE PRODUCT
+UPDATE PRODUCT SET MANUFACTURER_NAME = 'china' WHERE NAME = 't-shirt';
+
+--DELETE PRODUCT
+DELETE FROM PRODUCT WHERE ID < 1050;
