@@ -1,4 +1,4 @@
-package lesson6;
+package lesson6.fromLesson;
 
 public class Author {
     private long id;
